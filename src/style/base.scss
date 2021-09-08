@@ -1,0 +1,53 @@
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+$dark: #494846;
+$warning: #F8F9FA;
+$gray:#858377;
+$orange: #FF785E;
+
+.text-primary{
+  color: $dark;
+}
+
+.text-secondary{
+  color: gray;
+}
+
+.text-orange{
+  color: $orange;
+}
+
+
+.title{
+  @apply text-3xl font-bold;
+  letter-spacing: 3px;
+  color: $dark;
+}
+
+.label{
+  @apply rounded-md text-white text-xs w-24 mb-4;
+  background: $gray
+}
+
+.label-light{
+  background-color:  #E8E8DB;
+  color: $gray;
+  @apply rounded-md  text-xs w-24 mb-4;
+}
+
+.sponsor-title{
+    top: 25px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    @apply bg-white py-2 px-4 text-2xl font-medium absolute z-10;
+}
+
+.comment-card{
+  @apply  mt-4 p-4 border rounded-md border-gray-200;
+}
+
+.footer{
+  background: $dark;
+}

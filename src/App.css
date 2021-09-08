@@ -1,0 +1,19 @@
+.btn {
+  @apply py-1 px-8 rounded-3xl;
+}
+
+.btn-yellow {
+  @apply text-gray-700 bg-yellow-300 border-2 border-yellow-300  hover:bg-yellow-200;
+}
+
+.btn-outline-gray {
+  @apply text-gray-400 bg-transparent border-2 border-gray-400 hover:bg-gray-200;
+}
+
+.main-btn{
+  @apply w-full text-center py-2 px-8 rounded-3xl text-gray-700 bg-yellow-300 border-2 border-yellow-300  hover:bg-yellow-200;
+}
+
+.main-outline-btn{
+  @apply w-full py-2 px-8 rounded-3xl text-center text-gray-400 bg-transparent border-2 border-gray-400 hover:bg-gray-200;
+}
