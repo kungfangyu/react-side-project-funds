@@ -1,8 +1,8 @@
 /*
  * @Date: 2021-07-08 10:53:57
  * @LastEditors: Fane Kung
- * @LastEditTime: 2021-09-04 17:30:43
- * @FilePath: /website-funds/src/components/Header.js
+ * @LastEditTime: 2021-09-08 20:20:15
+ * @FilePath: /react-side-project/src/components/Header.js
  */
 import { useState } from 'react'
 import logo from '../assets/images/logo.jpg';
@@ -18,7 +18,9 @@ const Header = (props) => {
     <div className="border-b-2 border-yellow-300 fixed bg-white w-full z-20">
       <header className="container flex items-center justify-between py-4 ">
         <div className="flex items-center">
-          <img src={logo} alt="logo" className="w-28" />
+          <a href="https://kungfangyu.github.io/react-side-project-funds">
+            <img src={logo} alt="logo" className="w-28" />
+          </a>
           <ul className="menu ml-16 hidden md:hidden lg:flex">
             <li className="text-base text-gray-400 mr-8">關於</li>
             <li className="text-base text-gray-400 mr-8">挖寶</li>

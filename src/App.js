@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-07-04 18:23:39
  * @LastEditors: Fane Kung
- * @LastEditTime: 2021-09-08 20:11:19
+ * @LastEditTime: 2021-09-08 20:17:35
  * @FilePath: /react-side-project/src/App.js
  */
 import React from 'react';
@@ -37,7 +37,7 @@ const App = () => {
           className="container pt-8 pb-12 grid lg:grid-cols-3 lg:gap-12"
         >
           <div className="lg:col-span-2">
-              <Route path="/" exact>
+              <Route path="/react-side-project-funds">
                 <Redirect to="/tab/intro"/>
               </Route>
               <Route path="/tab/intro" exact component={Intro} />
