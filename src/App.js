@@ -1,11 +1,11 @@
 /*
  * @Date: 2021-07-04 18:23:39
  * @LastEditors: Fane Kung
- * @LastEditTime: 2021-09-07 20:50:57
- * @FilePath: /website-funds/src/App.js
+ * @LastEditTime: 2021-09-08 20:01:03
+ * @FilePath: /react-side-project/src/App.js
  */
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import FoundNav from './components/FoundNav';
@@ -37,15 +37,13 @@ const App = () => {
           className="container pt-8 pb-12 grid lg:grid-cols-3 lg:gap-12"
         >
           <div className="lg:col-span-2">
-            <Switch>
-              <Route path='/' exact>
-                <Redirect to="/tab/intro"/>
+              <Route path="/" exact>
+                <Redirect to="react-side-project-funds/tab/intro"/>
               </Route>
-              <Route path="/tab/intro" exact component={Intro} />
-              <Route path="/tab/faq" exact component={Faq} />
-              <Route path="/tab/news" exact component={News} />
-              <Route path="/tab/comments" exact component={Comments} />
-            </Switch>
+              <Route path="react-side-project-funds/tab/intro" exact component={Intro} />
+              <Route path="react-side-project-funds/tab/faq" exact component={Faq} />
+              <Route path="react-side-project-funds/tab/news" exact component={News} />
+              <Route path="react-side-project-funds/tab/comments" exact component={Comments} />
             <SponsorForm />
           </div>
           <div className="lg:block lg:col-span-1">
