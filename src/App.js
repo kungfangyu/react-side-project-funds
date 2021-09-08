@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-07-04 18:23:39
  * @LastEditors: Fane Kung
- * @LastEditTime: 2021-09-08 20:01:03
+ * @LastEditTime: 2021-09-08 20:05:22
  * @FilePath: /react-side-project/src/App.js
  */
 import React from 'react';
@@ -37,13 +37,13 @@ const App = () => {
           className="container pt-8 pb-12 grid lg:grid-cols-3 lg:gap-12"
         >
           <div className="lg:col-span-2">
-              <Route path="/" exact>
-                <Redirect to="react-side-project-funds/tab/intro"/>
+              <Route path="/react-side-project-funds" exact>
+                <Redirect to="/tab/intro"/>
               </Route>
-              <Route path="react-side-project-funds/tab/intro" exact component={Intro} />
-              <Route path="react-side-project-funds/tab/faq" exact component={Faq} />
-              <Route path="react-side-project-funds/tab/news" exact component={News} />
-              <Route path="react-side-project-funds/tab/comments" exact component={Comments} />
+              <Route path="/tab/intro" exact component={Intro} />
+              <Route path="/tab/faq" exact component={Faq} />
+              <Route path="/tab/news" exact component={News} />
+              <Route path="/tab/comments" exact component={Comments} />
             <SponsorForm />
           </div>
           <div className="lg:block lg:col-span-1">
