@@ -1,11 +1,11 @@
 /*
  * @Date: 2021-07-04 18:23:39
  * @LastEditors: Fane Kung
- * @LastEditTime: 2021-09-08 20:17:35
+ * @LastEditTime: 2021-09-08 20:23:18
  * @FilePath: /react-side-project/src/App.js
  */
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import FoundNav from './components/FoundNav';
@@ -37,6 +37,7 @@ const App = () => {
           className="container pt-8 pb-12 grid lg:grid-cols-3 lg:gap-12"
         >
           <div className="lg:col-span-2">
+            <Switch>
               <Route path="/react-side-project-funds">
                 <Redirect to="/tab/intro"/>
               </Route>
@@ -44,6 +45,7 @@ const App = () => {
               <Route path="/tab/faq" exact component={Faq} />
               <Route path="/tab/news" exact component={News} />
               <Route path="/tab/comments" exact component={Comments} />
+            </Switch>
             <SponsorForm />
           </div>
           <div className="lg:block lg:col-span-1">
